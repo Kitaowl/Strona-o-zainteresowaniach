@@ -75,7 +75,10 @@ body {
 
   /*Styl galerii z filmikami*/
   .galeria {
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     padding: 20px;
   }
 
