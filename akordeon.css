@@ -1,0 +1,119 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /*Czcionka*/
+  /*Jasny motyw*/
+  background: linear-gradient(to right, hsl(0, 94%, 94%), #f95151);
+  color: black;
+  transition: 0.3s;
+}
+
+/*Ciemny motyw*/
+body.motyw {
+  background: rgb(71, 67, 67);
+  color: white;
+}
+
+/*Styl menu nawigacyjnego*/
+.menu {
+  position: fixed; /*menu przeczepione do górnej części strony*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(224, 40, 40, 0.825);
+}
+
+.menu a {
+  display: block; /*Menu poziome*/
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/*Zmienianie koloru przy najechaniu na przyciski*/
+.menu a:hover {
+  background-color: rgba(241, 107, 107, 0.825);
+}
+
+.menu a.active {
+  background-color: rgba(246, 86, 86, 0.825);
+  font-weight: bold;
+}
+
+#toggle-theme {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #926e58;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+}
+
+#toggle-theme:hover {
+  background-color: #7b5d4a;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  top: 50px;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 15px 20px;
+  text-align: left;
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header::after {
+  content: "+";
+  font-size: 20px;
+}
+
+.accordion-header.active::after {
+  content: "-";
+}
+
+.accordion-header:hover {
+  background-color: #e9e9e9;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: white;
+}
+
+.accordion-content-inner {
+  padding: 20px;
+}

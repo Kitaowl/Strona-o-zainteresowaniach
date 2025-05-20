@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /*Czcionka*/
+    /*Jasny motyw*/
+    background: linear-gradient(to right, hsl(0, 94%, 94%), #f95151);
+    color: black;
+    transition: 0.3s;
+    font-size: 18px;
+  }
+
+  /*Ciemny motyw*/
+  body.motyw {
+    background: rgb(71, 67, 67);
+    color: white;
+  }
+
+  /*Styl menu nawigacyjnego*/
+  .menu {
+    position: fixed; /*menu przeczepione do górnej części strony*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(224, 40, 40, 0.825);
+  }
+
+  .menu a {
+    display: block; /*Menu poziome*/
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  /*Zmienianie koloru przy najechaniu na przyciski*/
+  .menu a:hover {
+    background-color: rgba(241, 107, 107, 0.825);
+  }
+
+  .menu a.active {
+    background-color: rgba(246, 86, 86, 0.825);
+    font-weight: bold;
+  }
+
+  #toggle-theme {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #926e58;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+  }
+
+  #toggle-theme:hover {
+    background-color: #7b5d4a;
+  }
+
+  #naglowek {
+    text-align: center;
+  }
+
+  #logo {
+    width: 15%; /*Rozmiar logo*/
+  }
+
+  /*Styl galerii z filmikami*/
+  .galeria {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  /*Styl stopki*/
+  footer {
+    padding: 10px;
+    background-color: rgba(224, 40, 40, 0.825);
+    color: #fff;
+    text-align: center;
+  }
+
+  /*Umieszczenie nagłówków na środek*/
+  #czym_muzyka,
+  #rodz_inst {
+    text-align: center;
+  }
+
+  #czym_muzyka_p {
+    padding: 20px; /*Odstęp nagłówka i akapitu*/
+  }
+
+  .rodz_info {
+    padding: 15px; /*Odstęp nagłówków i akapitów*/
+  }

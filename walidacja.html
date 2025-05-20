@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walidacja</title>
+    <link rel="stylesheet" href="walidacja.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Menu nawigacyjne w górnej części strony -->
+      <ul class="menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="walidacja.html">Kontakt</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="akordeon.html">Akordeon</a></li>
+      </ul>
+
+      <!-- Przycisk do zmiany motywu (ciemny/jasny) -->
+      <button id="toggle-theme">Zmień motyw 🌙</button>
+
+      <!-- Formularz kontaktowy -->
+      <form id="contactForm">
+        <h2>Skontaktuj się z nami</h2>
+
+        <!-- Pola formularza -->
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Przycisk do wysłania formularza -->
+        <button type="submit" id="sendBtn">Wyślij</button>
+
+        <!-- Miejsce na komunikaty błędu po wysłaniu formularza -->
+        <div id="formMessage"></div>
+      </form>
+    </header>
+
+    <!-- Podłączenie plików JS -->
+    <script src="ciemny_motyw.js"></script>
+    <!-- Skrypt zmieniający motyw -->
+    <script src="aktywny_link.js"></script>
+    <!-- Skrypt aktywnego linku w menu -->
+    <script src="walidacja.js"></script>
+    <!-- Skrypt walidacji formularza -->
+  </body>
+</html>

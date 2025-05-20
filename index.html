@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Responsywność strony-->
+    <title>Strona internetowa o moich zainteresowaniach</title>
+    <link rel="stylesheet" href="index_html.css" />
+  </head>
+  <body>
+    <header>
+      <!--Menu nawigacyjne w headerze-->
+      <ul class="menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="walidacja.html">Kontakt</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="akordeon.html">Akordeon</a></li>
+      </ul>
+      <button id="toggle-theme">Zmień motyw 🌙</button>
+    </header>
+
+    <!--Logo i nagłówek-->
+    <div id="naglowek">
+      <h1>Muzyka</h1>
+      <img src="logo.svg" alt="logo" id="logo" />
+    </div>
+
+    <!--Nagłówek i akapit informacyjny-->
+    <div>
+      <h2 id="czym_muzyka">Czym jest muzyka?</h2>
+      <p id="czym_muzyka_p">
+        Muzyka to forma sztuki, która wykorzystuje dźwięki i ciszę, aby wyrażać
+        emocje, opowiadać historie lub po prostu dostarczać przyjemności
+        słuchaczowi. Składa się z elementów takich jak rytm, melodia, harmonia i
+        dynamika. <br />Muzyka ma wyjątkową zdolność wywoływania emocji. Może
+        nas uspokoić, zmotywować, wzruszyć czy wręcz wzburzyć. Często używana
+        jest do wyrażania uczuć, których nie da się wyrazić słowami, dlatego
+        może stać się takim universalnym językiem.
+      </p>
+
+      <hr />
+
+      <!--Informacja w nagłówkach i akapitach-->
+      <h2 id="rodz_inst">Rodzaje instrumentów</h2>
+      <div class="rodz_info">
+        <h3>Strunowe</h3>
+        <p>Dźwięk z drgających strun. Gitara, skrzypce, harfa, fortepian</p>
+        <br />
+        <h3>Perkusyjne</h3>
+        <p>
+          Dźwięk przez uderzanie lub potrząsanie. bęben, werbel, talerze,
+          marakasy
+        </p>
+        <br />
+        <h3>Dęte</h3>
+        <p>
+          Dźwięk z powietrza wprawianego w ruch. Drewniane: flet, klarnet
+          Blaszane: trąbka, puzon
+        </p>
+      </div>
+    </div>
+
+    <!--Galeria filmików YT-->
+    <div class="galeria">
+      <iframe
+        src="https://www.youtube.com/embed/9LF8xz_e4Qw?si=pxXaG6m5fnnBwhTe"
+        allow="fullscreen"
+      ></iframe>
+      <iframe
+        src="https://www.youtube.com/embed/hkXjzL3jU3Q?si=qjm6NLF5I7iNU1Dg"
+        allow="fullscreen"
+      ></iframe>
+      <iframe
+        src="https://www.youtube.com/embed/YCUp5iPxkTA?si=dJm1BRVXNk6GzY0W"
+        allow="fullscreen"
+      ></iframe>
+    </div>
+    <!--Stopka-->
+    <footer>Stronę wykonał: Mykyta Soloviov, 1KL</footer>
+    <script src="ciemny_motyw.js"></script>
+    <script src="aktywny_link.js"></script>
+  </body>
+</html>

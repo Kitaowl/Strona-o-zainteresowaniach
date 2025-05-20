@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz muzyczny</title>
+    <link rel="stylesheet" href="quiz_html.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Główne menu nawigacyjne strony -->
+      <ul class="menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="walidacja.html">Kontakt</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="akordeon.html">Akordeon</a></li>
+      </ul>
+
+      <!-- Przycisk do zmiany motywu (jasny/ciemny) -->
+      <button id="toggle-theme">Zmień motyw 🌙</button>
+    </header>
+
+    <div class="app">
+      <h1>Quiz o muzyce 🎵</h1>
+      <!-- Główny nagłówek strony -->
+
+      <div class="quiz">
+        <h2 id="question">Pytanie pojawi się tutaj</h2>
+        <div id="answer-buttons" class="btn-container"></div>
+        <!-- Przycisk przejścia do następnego pytania -->
+        <button id="next-btn">Dalej</button>
+      </div>
+    </div>
+
+    <!-- Podłączenie plików JavaScript -->
+    <script src="quiz.js"></script>
+    <script src="ciemny_motyw.js"></script>
+    <script src="aktywny_link.js"></script>
+  </body>
+</html>

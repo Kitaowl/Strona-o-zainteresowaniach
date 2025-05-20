@@ -1,0 +1,127 @@
+* {
+  margin: 0; /*Elementy nie będą się dotykały do końców strony.*/
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /*Czcionka*/
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    hsl(0, 94%, 94%),
+    #f95151
+  ); /*Kolor tła*/
+}
+
+/*Styl kontenera*/
+.app {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.app h1 {
+  font-size: 25px;
+  color: #001ed4;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 18px;
+  color: #001ed4;
+  font-weight: 600;
+}
+
+.btn {
+  /*Styl przycisku*/
+  background-color: #fff; /*Kolor przycisku*/
+  color: #222;
+  /*Rozmiary i wygląd*/
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left; /*Przycisk jest po lewej stronie*/
+  border-radius: 4px; /*Kąty zaokrąglone*/
+  cursor: pointer; /*Przy najechaniu kursorem jest animacja*/
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #f95151; /*Kolor przycisku przy najechaniu na niego kursorem*/
+  color: #fff;
+}
+
+#next-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 0;
+  margin: 10px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  /*Styl menu nawigacyjnego*/
+  position: fixed; /*menu przeczepione do górnej części strony*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(224, 40, 40, 0.825);
+}
+
+.menu a {
+  display: block; /*Menu poziome*/
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/*Zmienianie koloru przy najechaniu na przyciski*/
+.menu a:hover {
+  background-color: rgba(241, 107, 107, 0.825);
+}
+
+.menu a.active {
+  background-color: rgba(
+    246,
+    86,
+    86,
+    0.825
+  ); /*Inny kolor przycisku podstrony na której jest użytkownik*/
+  font-weight: bold; /*Pogrubienie tekstu*/
+}
+
+#toggle-theme {
+  /*Styl */
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #926e58;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+}
