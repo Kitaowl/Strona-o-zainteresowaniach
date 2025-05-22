@@ -16,7 +16,6 @@ body {
 /* Ciemny motyw */
 body.motyw {
   background: rgb(51, 49, 49);
-  color: white;
 }
 
 /* Styl menu nawigacyjnego */
